@@ -211,6 +211,7 @@ MonoBehaviour:
   sol: {fileID: 2421628349334511573}
   karsi: {fileID: 2364083237042932047}
   carpraz: {fileID: 8482776931570339929}
+  dolu: 0
 --- !u!1 &1831032312076377078
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +326,7 @@ MonoBehaviour:
   sol: {fileID: 0}
   karsi: {fileID: 2628630012306374601}
   carpraz: {fileID: 5865966599692135119}
+  dolu: 0
 --- !u!1 &2326151854888573912
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +474,7 @@ MonoBehaviour:
   sol: {fileID: 0}
   karsi: {fileID: 1691796638961297952}
   carpraz: {fileID: 2628630012306374601}
+  dolu: 0
 --- !u!1 &2421628349334511573
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +589,7 @@ MonoBehaviour:
   sol: {fileID: 0}
   karsi: {fileID: 5865966599692135119}
   carpraz: {fileID: 8058215829601477879}
+  dolu: 0
 --- !u!1 &2628630012306374601
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +704,7 @@ MonoBehaviour:
   sol: {fileID: 8482776931570339929}
   karsi: {fileID: 1831032312076377078}
   carpraz: {fileID: 2364083237042932047}
+  dolu: 0
 --- !u!1 &2773923452951579990
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +859,7 @@ MonoBehaviour:
   sol: {fileID: 2364083237042932047}
   karsi: {fileID: 2421628349334511573}
   carpraz: {fileID: 1831032312076377078}
+  dolu: 0
 --- !u!1 &7747396993270769720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1056,8 @@ MonoBehaviour:
   sag: {fileID: 0}
   sol: {fileID: 1831032312076377078}
   karsi: {fileID: 2628630012306374601}
-  carpraz: {fileID: 5865966599692135119}
+  carpraz: {fileID: 2421628349334511573}
+  dolu: 0
 --- !u!1 &8482776931570339929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,3 +1172,4 @@ MonoBehaviour:
   sol: {fileID: 0}
   karsi: {fileID: 8058215829601477879}
   carpraz: {fileID: 1691796638961297952}
+  dolu: 0

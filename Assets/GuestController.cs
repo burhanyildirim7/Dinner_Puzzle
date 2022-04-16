@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 
 public class GuestController : MonoBehaviour
@@ -8,6 +9,7 @@ public class GuestController : MonoBehaviour
 	bool oturdu;
 	Vector3 firstPosition;
 	public string isim;
+	public GameObject happy, sad;
 
 	private void Start()
 	{
@@ -51,7 +53,7 @@ public class GuestController : MonoBehaviour
 		if (!oturdu)
 		{
 			transform.parent = null;
-			transform.position = firstPosition;
+			transform.DOMove(firstPosition,.5f);
 		}
 	}
 
@@ -88,6 +90,7 @@ public class GuestController : MonoBehaviour
 			}
 			else
 			{
+				sad.SetActive(true);
 				Debug.Log("üzüyorsun beni");
 			}
 		}
@@ -98,62 +101,62 @@ public class GuestController : MonoBehaviour
 	{
 		if (isim1 == "anne" && isim2 == "baba")
 		{
-			Debug.Log("merhaba kocacým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "baba" && isim2 == "anne")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "baba" && isim2 == "cocuk")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "anne" && isim2 == "cocuk")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "cocuk")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "anne")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "baba")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "kari" && isim2 == "koca")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "koca" && isim2 == "kari")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "isci" && isim2 == "isci")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "isci" && isim2 == "patron")
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 		else if (isim1 == "patron" && isim2 == "isci") // burasda kral koltuðu kontrolü yapýlacak...
 		{
-			Debug.Log("merhaba merhaba karýcým saðýmdasýn");
+			happy.SetActive(true);
 			return;
 		}
 	}
