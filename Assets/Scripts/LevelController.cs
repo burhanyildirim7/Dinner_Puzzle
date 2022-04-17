@@ -8,7 +8,7 @@ public class LevelController : MonoBehaviour
     public static LevelController instance;
     public int levelNo, tempLevelNo, totalLevelNo; // totallevelno tum leveller bitip random level gelmeye baslayinca kullaniliyor
     public List<GameObject> levels = new List<GameObject>();
-    private GameObject currentLevelObj;
+    public GameObject currentLevelObj;
 
     private void Awake()
     {

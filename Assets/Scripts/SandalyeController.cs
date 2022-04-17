@@ -5,7 +5,7 @@ using UnityEngine;
 public class SandalyeController : MonoBehaviour
 {
 
-	public GameObject sag, sol, karsi,carpraz;
+	public GameObject komsu1, komsu2;
 	public bool dolu;
 	public int type;
 }
