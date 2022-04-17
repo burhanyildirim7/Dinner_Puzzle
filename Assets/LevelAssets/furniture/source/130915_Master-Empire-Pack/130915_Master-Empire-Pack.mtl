@@ -1,0 +1,671 @@
+newmtl Dining_Table_Set_-_Gehry_-_Easy_Edges_Ta
+Ka 0.701960784313725 0.588235294117647 0.474509803921569
+Kd 0.701960784313725 0.588235294117647 0.474509803921569
+d 0
+newmtl Table_-_Cherner_Rectangle_-_Natural_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Cherner_Round_-_Natural_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Furniture
+Ka 0.5 0.5 0.5
+Kd 0.5 0.5 0.5
+d 1
+newmtl Table_-_Ch316-18_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Ch316-18_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Ch327_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.White_Oak.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.White_Oak.png
+newmtl Table_-_Boss_Design_-_The_Rota_Table_-_L
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Bo_Hagood_-_Plateau_Dining_Table
+Ka 1 0.470588235294118 0.00784313725490196
+Kd 1 0.470588235294118 0.00784313725490196
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+newmtl Table_-_Benamin_Cherner_-_Cherner_Table_
+Ka 0.941176470588235 0.443137254901961 0.156862745098039
+Kd 0.941176470588235 0.443137254901961 0.156862745098039
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Walnut.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Walnut.png
+newmtl Table_-_Atlantico_-_004_Atlantico_Table_
+Ka 0.898039215686275 0.356862745098039 0
+Kd 0.898039215686275 0.356862745098039 0
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Teak.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Teak.png
+newmtl Table_-_Arik_Levy_-_Bend-in_Table_Legs
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Arik_Levy_-_Bend-in_Table_Top
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Allain_Gilles_-_Tectonic_Table
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_A.G.Fronzoni_-_Fronzoni_'64__FR2
+Ka 0.501960784313725 1 0
+Kd 0.501960784313725 1 0
+d 0
+newmtl Talble_-_82_-_Wood
+Ka 1 0.67843137254902 0.411764705882353
+Kd 1 0.67843137254902 0.411764705882353
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+newmtl Talble_-_82_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_6_Star_Super_Circular_-_Black_La
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_6_Star_Super_Circular_-__Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_6_Star_Super_Circular_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_6_Star_Circular_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_6_Star_Circular_-_BlackLaminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_6_Star_Circular_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_003_Atlantico_Oak_-_Wood
+Ka 0.752941176470588 0.258823529411765 0.105882352941176
+Kd 0.752941176470588 0.258823529411765 0.105882352941176
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.White_Oak.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.White_Oak.png
+newmtl Stool_-_Tai_Bar_Seat
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Stool_-_Tai_Bar_Legs
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Stool_-_Tai_-_Bar_Stool_Seat
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Stool_-_Tai_-_Bar_Stool_Legs
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Stool_-_Pierre_Paulin_-_Mushroom_Stool_S
+Ka 0.501960784313725 1 0
+Kd 0.501960784313725 1 0
+d 0
+newmtl Stool_-_Pierre_Paulin_-_Mushroom_Stool_L
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Stool_-_Marco_Maran_-_Barstool_X3_Leg
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Stool_-_Marco_Maran_-_Barstool_X3_Seat
+Ka 0.654901960784314 1 0.309803921568627
+Kd 0.654901960784314 1 0.309803921568627
+d 0.1
+newmtl Stool_-_Jim_-_Bartstoo_Legs
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Stool_-_Jim_-_Bartstool_Seat
+Ka 0.619607843137255 1 0.243137254901961
+Kd 0.619607843137255 1 0.243137254901961
+d 1
+map_Ka Furnishings.Fabrics.Leather.Black.png
+map_Kd Furnishings.Fabrics.Leather.Black.png
+newmtl Stool_-_Gehry_-_Wiggle_Stool_Cardboard
+Ka 0.701960784313725 0.588235294117647 0.474509803921569
+Kd 0.701960784313725 0.588235294117647 0.474509803921569
+d 0
+newmtl Stool_-_Blu_Dot_-_Timber_Stool
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Stool_-_Blu_Dot_-_Knicker_Barstool_Legs
+Ka 0.462745098039216 0.290196078431373 0.0392156862745098
+Kd 0.462745098039216 0.290196078431373 0.0392156862745098
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Stool_-_Blu_Dot_-_Knicker_Barstool_Seat
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 1
+map_Ka Furnishings.Fabrics.Leather.Black.png
+map_Kd Furnishings.Fabrics.Leather.Black.png
+newmtl Table_-_Pk54_-_Alabaster
+Ka 0.898039215686275 0.925490196078431 0.874509803921569
+Kd 0.898039215686275 0.925490196078431 0.874509803921569
+d 0
+map_Ka Masonry.Stone.Alabaster.png
+map_Kd Masonry.Stone.Alabaster.png
+newmtl Table_-_Pk54_-_Stainless_Steel
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Pk54_-_Natural_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_One_Bistrot_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_One_Bistrot_-_White_Laminate
+Ka 0.917647058823529 0.917647058823529 0.917647058823529
+Kd 0.917647058823529 0.917647058823529 0.917647058823529
+d 0
+newmtl Table_-_One_Bistrot_-_Concrete
+Ka 0.698039215686274 0.698039215686274 0.698039215686274
+Kd 0.698039215686274 0.698039215686274 0.698039215686274
+d 0
+newmtl Table_-_Noguchi_Cyclone_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Noguchi_Cyclone_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Nick_Dining_-_Natural_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Maarten_Van_Severen_-_Wood_Table
+Ka 1 0.470588235294118 0.00784313725490196
+Kd 1 0.470588235294118 0.00784313725490196
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+newmtl Table_-_Le_Corbusier_Lc6_-_Stainless_Ste
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+map_Ka Metals.Ornamental_Metals.Aluminum.Brushed.Random.png
+map_Kd Metals.Ornamental_Metals.Aluminum.Brushed.Random.png
+newmtl Table_-_Le_Corbusier_Lc6_-_Black_Metal
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Le_Corbusier_Lc6_-_Glass
+Ka 0.866666666666667 0.866666666666667 0.866666666666667
+Kd 0.866666666666667 0.866666666666667 0.866666666666667
+d 0.2
+newmtl Table_-_Large_Pedestral_Base_Circular_To
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Kartell_Maui_Round_-_Navy_Black_
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Kartell_Maui_Round_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Kartell_Maui_Oval_-_Navy_Black_L
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Kartell_Maui_Oval_-_Navy_Black_M
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Kartell_Maui_Oval_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Kartell_Maui_-_Navy_Black_Lamina
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Kartell_Maui_-_Navy_Black_Metal
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Kartell_Maui_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Jens_Risom_-_Natural_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Jean_Prouve_-_Gueridon_Table_Ste
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Table_-_Jean_Prouve_-_Gueridon_Table_Lam
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Table_-_Jean_Prouve_-_Compass_Table_Leg
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Table_-_Jean_Prouve_-_Compass_Table_Top
+Ka 0.729411764705882 0.819607843137255 0.929411764705882
+Kd 0.729411764705882 0.819607843137255 0.929411764705882
+d 0
+newmtl Table_-_Jean_Prouve_-_Compass_Table_Trim
+Ka 0.0666666666666667 0.0666666666666667 0.0666666666666667
+Kd 0.0666666666666667 0.0666666666666667 0.0666666666666667
+d 0
+newmtl Table_-_Jean_Nouvel_-_Less_Table_Legs
+Ka 0.729411764705882 0.819607843137255 0.929411764705882
+Kd 0.729411764705882 0.819607843137255 0.929411764705882
+d 0
+newmtl Table_-_Jean_Nouvel_-_Less_Table_Top
+Ka 0.729411764705882 0.819607843137255 0.929411764705882
+Kd 0.729411764705882 0.819607843137255 0.929411764705882
+d 0
+newmtl Talble_-_Ice_Square_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Talble_-_Ice_Square_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Talble_-_Ice_Square_-_White_Glass
+Ka 0.898039215686275 0.898039215686275 0.898039215686275
+Kd 0.898039215686275 0.898039215686275 0.898039215686275
+d 0.2
+newmtl Table_-_Ice_Rectangular_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Ice_Rectangular_-_White_Glass
+Ka 0.898039215686275 0.898039215686275 0.898039215686275
+Kd 0.898039215686275 0.898039215686275 0.898039215686275
+d 0.2
+newmtl Table_-_Ice_Circular_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Ice_Circular_-_White_Glass
+Ka 0.898039215686275 0.898039215686275 0.898039215686275
+Kd 0.898039215686275 0.898039215686275 0.898039215686275
+d 0.2
+newmtl Table_-_Ice_Circular_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Glossy_Square_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Glossy_Square_-_Glossy_Red
+Ka 0.8 0 0
+Kd 0.8 0 0
+d 0
+newmtl Table_-_Glossy_Round_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Glossy_Round_-_Red
+Ka 0.8 0 0
+Kd 0.8 0 0
+d 0
+newmtl Table_-_Glossy_Oval_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Glossy_Oval_-_Red
+Ka 0.8 0 0
+Kd 0.8 0 0
+d 0
+newmtl Table_-_Gehry_-_Easy_Edges_Table_Glass
+Ka 0.866666666666667 0.866666666666667 0.866666666666667
+Kd 0.866666666666667 0.866666666666667 0.866666666666667
+d 0.2
+newmtl Table_-_Gehry_-_Easy_Edges_Table_Cardboa
+Ka 0.701960784313725 0.588235294117647 0.474509803921569
+Kd 0.701960784313725 0.588235294117647 0.474509803921569
+d 0
+newmtl Table_-_Four_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Four_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Florence_Knoll_Round_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Florence_Knoll_Round_-_Black_Lam
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Florence_Knoll_Oval_Large_-_Blac
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Florence_Knoll_Oval_Large_-_Chro
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Florence_Knoll_Oval_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Florence_Knoll_Oval_-_Black_Lami
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Essay_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Double_X_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Double_X_-_Black_Laminate
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Double_X_-_Glass
+Ka 0.866666666666667 0.866666666666667 0.866666666666667
+Kd 0.866666666666667 0.866666666666667 0.866666666666667
+d 0.2
+newmtl Table_-_Dining_Wood_-_Natural_Wood
+Ka 1 0.470588235294118 0.00784313725490196
+Kd 1 0.470588235294118 0.00784313725490196
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Cherry.png
+newmtl Table_-_Dining_Glass_-_Leg
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Dining_Glass_-_Top
+Ka 0.866666666666667 0.866666666666667 0.866666666666667
+Kd 0.866666666666667 0.866666666666667 0.866666666666667
+d 0.2
+newmtl Table_-_Cosmos_Tall_Square_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Cosmos_Tall_Square_-_Black_Lamin
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Cosmos_Tall_Round_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Cosmos_Tall_Round_-_Black_Lamina
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_X_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_X_-_Wood
+Ka 1 0.67843137254902 0.411764705882353
+Kd 1 0.67843137254902 0.411764705882353
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+newmtl Table_-_Tossa_Team_-_Exo_Table_Legs
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Tossa_Team_-_Exo_Table_Top
+Ka 0.419607843137255 0.137254901960784 0
+Kd 0.419607843137255 0.137254901960784 0
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Mahogany.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Mahogany.png
+newmtl Table_-_Ta04_Bigfoot_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Super_Eliliptical_Span_Leg_-_Chr
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Super_Eliliptical_Span_Leg_-_Red
+Ka 1 0.317647058823529 0.317647058823529
+Kd 1 0.317647058823529 0.317647058823529
+d 0
+newmtl Table_-_Super_Elliptical_6_Star_Base_-_W
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Super_Elliptical_6_Star_Base_-_B
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Super_Elliptical_6_Star_Base_-_C
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Super_Circular_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Super_Circular_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Super_Circular_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Strut_-_Red_Metal
+Ka 1 0.2 0.2
+Kd 1 0.2 0.2
+d 0
+newmtl Table_-_Starfish_-_Dark_Walnut
+Ka 0.941176470588235 0.443137254901961 0.156862745098039
+Kd 0.941176470588235 0.443137254901961 0.156862745098039
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Walnut.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Walnut.png
+newmtl Table_-_Square_Span_Leg_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Square_Span_Leg_-_White_Laminate
+Ka 0.917647058823529 0.917647058823529 0.917647058823529
+Kd 0.917647058823529 0.917647058823529 0.917647058823529
+d 0
+newmtl Table_-_Square_4_Star_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Square_4_Star_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Square_4_Star_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Sprout_Dining_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Sprout_Dining_-_Black_Laminate
+Ka 0.0196078431372549 0.0196078431372549 0.0196078431372549
+Kd 0.0196078431372549 0.0196078431372549 0.0196078431372549
+d 0
+newmtl Table_-_Span_Leg_Circular_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Span_Leg_Circular_-_White_Lamina
+Ka 0.917647058823529 0.917647058823529 0.917647058823529
+Kd 0.917647058823529 0.917647058823529 0.917647058823529
+d 0
+newmtl Table_-_Span_Leg_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Span_Leg_-_White_Laminate
+Ka 0.917647058823529 0.917647058823529 0.917647058823529
+Kd 0.917647058823529 0.917647058823529 0.917647058823529
+d 0
+newmtl Table_-_Slider_Dining_-_Wood
+Ka 0.419607843137255 0.137254901960784 0
+Kd 0.419607843137255 0.137254901960784 0
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Mahogany.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Mahogany.png
+newmtl Table_-_Saarinen_96x54_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_78x48_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_62_Dia_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_54_Dia_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_45_Dia_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_42_Dia_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Saarinen_36_Dia_-_White_Laminate
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Russel_Dining_-_Wood
+Ka 1 0.67843137254902 0.411764705882353
+Kd 1 0.67843137254902 0.411764705882353
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Maple.png
+newmtl Table_-_Rectangular_Span_Leg_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Rectangular_Span_Leg_-_White_Lam
+Ka 0.917647058823529 0.917647058823529 0.917647058823529
+Kd 0.917647058823529 0.917647058823529 0.917647058823529
+d 0
+newmtl Table_-_Prouvé_Guéridon_-_Black_Metal
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Prouvé_Guéridon_-_White
+Ka 0.956862745098039 0.956862745098039 0.956862745098039
+Kd 0.956862745098039 0.956862745098039 0.956862745098039
+d 0
+newmtl Table_-_Prouvé_Em_-_Black_Frame
+Ka 0 0 0
+Kd 0 0 0
+d 0
+newmtl Table_-_Prouvé_Em_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Plate_Dining_-_Wood
+Ka 0.462745098039216 0.290196078431373 0.0392156862745098
+Kd 0.462745098039216 0.290196078431373 0.0392156862745098
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+newmtl Table_-_Plate_Dining_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Planter_Dining_-_Chrome_Metal
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Planter_Dining_-_Clear_Glass
+Ka 0.866666666666667 0.866666666666667 0.866666666666667
+Kd 0.866666666666667 0.866666666666667 0.866666666666667
+d 0.2
+newmtl Table_-_Plano_Dining_-_Chrome
+Ka 0.6 0.6 0.6
+Kd 0.6 0.6 0.6
+d 0
+newmtl Table_-_Plano_Dining_-_Wood
+Ka 1 1 1
+Kd 1 1 1
+d 0
+map_Ka Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+map_Kd Woods_&_Plastics.Finish_Carpentry.Wood.Red_Birch.png
+
