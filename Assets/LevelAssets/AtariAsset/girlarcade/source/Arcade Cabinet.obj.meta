@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 8503135f710bee848ab91306800e6850
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Boton_abajo_MonedasMat
+    second: {fileID: 2100000, guid: 5c91de74a193ee440b1c99005ea17764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder13Mat
+    second: {fileID: 2100000, guid: 151c7b6cbee2e8f489ead46575fc4e12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder25Mat
+    second: {fileID: 2100000, guid: 0d9213f84c82f20469114048a73edbd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder26Mat
+    second: {fileID: 2100000, guid: ac4aa5a360ecc354ca43318fbbda0980, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder27Mat
+    second: {fileID: 2100000, guid: 64888e6e09f778049acb9baeca142ea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder5Mat
+    second: {fileID: 2100000, guid: 86cfca3fb2fd3bd4ab0083fed1904407, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_Izqda_pCylinder6Mat
+    second: {fileID: 2100000, guid: 94e401ec98017774ab70bd67cf508957, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Botones_pCylinder9_IzqdaMat
+    second: {fileID: 2100000, guid: 5c8fb9683643768448deb7a6bf6b94b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder13Mat
+    second: {fileID: 2100000, guid: 30e1ef6f07d7c7c40aba60b969fda964, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder25Mat
+    second: {fileID: 2100000, guid: 939a1cd40e2a01f46b07183e2d279d74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder26Mat
+    second: {fileID: 2100000, guid: f918fa1cb13bff040845c38ae1b60604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder27Mat
+    second: {fileID: 2100000, guid: 4983fe874b358554d994371b3ce981c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder5Mat
+    second: {fileID: 2100000, guid: 2c060af38f708014093e780c841eae1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Dcha_Botones_pCylinder6Mat
+    second: {fileID: 2100000, guid: 0816d208c7dd77a489fe08494550cfa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_LadosMat
+    second: {fileID: 2100000, guid: eae05ca4255ae9a45b57e11bb653d5fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_LucesMat
+    second: {fileID: 2100000, guid: 62444839b02c09f409f80eb7d85b2391, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Monedas_MonedasMat
+    second: {fileID: 2100000, guid: 2bd2b632484d22f4ebc111cc3fb3e446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_Tabla_controlMat
+    second: {fileID: 2100000, guid: 669a6a78a327de7468460d3f7a368fef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARCADE_pCylinder9_Dcha_BotonesMat
+    second: {fileID: 2100000, guid: 8901935bf262e9246828f8ee1e158c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_ARCADEMat
+    second: {fileID: 2100000, guid: 3c24185d8f5e9764988b998588ad159d, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.5
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
