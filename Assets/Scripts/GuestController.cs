@@ -11,6 +11,7 @@ public class GuestController : MonoBehaviour
 	public string isim;
 	public GameObject happy, sad,happyPrefab;
 	public int type;
+	public bool insanMý;
 
 	private void Start()
 	{
@@ -22,7 +23,6 @@ public class GuestController : MonoBehaviour
 	{
 		if (other.CompareTag("sandalye") && !other.GetComponent<SandalyeController>().dolu)
 		{		
-			Debug.Log("saldayle");
 			oturdu = true;
 			transform.parent = other.transform;
 		}
@@ -45,8 +45,13 @@ public class GuestController : MonoBehaviour
 		yield return new WaitForSeconds(.05f);
 		if (oturdu)
 		{
+			if (insanMý)
+			{
+				GetComponentInChildren<Animator>().SetTrigger("sit");
+				transform.LookAt(transform.parent.transform.parent.transform.position,Vector3.up);
+			}
 
-			transform.localPosition = Vector3.zero;
+			transform.localPosition = new Vector3(0,1.5f,0);
 			transform.parent.GetComponent<SandalyeController>().dolu = true;
 			ControlNeighBours();
 			

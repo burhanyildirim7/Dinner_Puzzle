@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
 	public void IncreaseScore()
 	{
 		score += 2;
+		Debug.Log("score" + score);
     }
 
 	public void DecreaseScore()

@@ -135,6 +135,7 @@ MonoBehaviour:
   sad: {fileID: 5426616935009767017}
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
+  "insanM\u0131": 1
 --- !u!1 &5426616933551763647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5234,6 +5235,7 @@ MonoBehaviour:
   sad: {fileID: 8230149795678836906}
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
+  "insanM\u0131": 1
 --- !u!1 &5426616933709252217
 GameObject:
   m_ObjectHideFlags: 0
@@ -20016,6 +20018,7 @@ MonoBehaviour:
   sad: {fileID: 5426616933551763647}
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
+  "insanM\u0131": 1
 --- !u!1 &5426616934078307687
 GameObject:
   m_ObjectHideFlags: 0
@@ -25029,6 +25032,7 @@ MonoBehaviour:
   sad: {fileID: 5426616935255886944}
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
+  "insanM\u0131": 1
 --- !u!1 &5426616934498180246
 GameObject:
   m_ObjectHideFlags: 0
