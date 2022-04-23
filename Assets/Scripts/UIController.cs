@@ -125,16 +125,16 @@ public class UIController : MonoBehaviour
         int sayac = 0;
         while (sayac < GameController.instance.score)
         {
-            sayac += PlayerController.instance.collectibleDegeri;
-            if (sayac % 2 * PlayerController.instance.collectibleDegeri == 0)
-            {
-                GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
-                effectObj.transform.localPosition = new Vector3(144, 300, 0);
-                effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
-                effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
-                effectObj.transform.localScale = Vector3.one * .2f;
-                StartCoroutine(WinScreenEffect(effectObj));
-            }
+            //sayac += PlayerController.instance.collectibleDegeri;
+            //if (sayac % 2 * PlayerController.instance.collectibleDegeri == 0)
+            //{
+            //    GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
+            //    effectObj.transform.localPosition = new Vector3(144, 300, 0);
+            //    effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
+            //    effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
+            //    effectObj.transform.localScale = Vector3.one * .2f;
+            //    StartCoroutine(WinScreenEffect(effectObj));
+            //}
             winScreenScoreText.text = sayac.ToString();
             yield return new WaitForSeconds(.05f);
         }

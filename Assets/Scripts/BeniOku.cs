@@ -5,7 +5,60 @@ using UnityEngine;
 public class BeniOku : MonoBehaviour
 {
     /*
-     
+    ---------------------------------- DINNER PUZZLE NOTLARI  --------------------------------------------------
+    * KARAKTERLER ...
+    * Karakterler bos bir gameobje icerisinde child olarak eklenecek. Parent objeye herhangi bir tag veya komponent eklenmeyecek.
+    * 
+    * Karakterler   Assets\Prefabs\Ekipler  klasoru icerisinde verilen duzenlerde olmali. 
+    * 
+    * Karakterlerin her birinde colider, rigidbody, script veya tag gibi ozellikleri mutlaka Ekipler klasorundeki ornek karakterler gibi
+    * duzenlenmeli
+    * 
+    * Tum karakterlerin tagleri drag olacak. !!!
+    * 
+    * Karakterlerin scriptleri icerisinde (inspectorda) karakterin ismi, tipi ve verecegi tepki efektleri karaktere ozel
+    * ayarlanabilir.
+    * 
+    * isim ve tip kodun duzgun calisabilmesi icin onemli. Eklenecek her yeni karakter icin developera bilgi verilip 
+    *  kod uzerinde ufak duzenlemeleri tamamlamasi istenmeli. isim degiskenleri kucuk harfle yazilmali. Type lar integer
+    *  asagida type lar listeleniyor. Gozat.
+    *  
+    *  
+    *  
+    *  MASALAR ....
+    *  Masa duzenlemeleri Assets\Prefabs\MasaTakimlari klasorunde yer aldigi gibi duzenlenmeli. Masanin bir onemi yok onemli olan
+    *  sandalyelerimiz. 
+    *  
+    *  Sandalyelere orneklerde oldugu gibi script ve diger komponentler eklenmeli. Burada scriptin ayari onemli. Her sandalyenin iki 
+    *  komsusu olmasi gerekmektedir. Masalarin durumlarina göre sag - sol veya karsilikli olarak sandalyeler komsu eklenebilir.
+    *  Bu komsuluk meselesi karakterlerin dogru yerlerde olup olmamasýný etkilemektedir. Bu ayarlar inspektor uzerinden yapýlacak.
+    *  
+    *  Hem sandalye hem de karakter scriptinde type degiskeni bulunmaktadir. Bu degisken ozel bir karakterin ozel bir sandalyeye
+    *  oturmasi gerektigi senaryolarda kullanilacak. Hem ozel karakter hem de sandalye type'i ayni sayi girilmeli. Default type 0.
+    *  Ornegin bir patronu masanýn basindaki sandalyeye oturtmak veya kedinin kedi kabina kopegin kopek kabina yerlesmesini saglamak 
+    *  veya bunlarin kontrolunu saglamak icin type degiskeni onemlidir.
+    *  
+    *  LEVELCONTROLLER AYARLARI .....
+    *  
+    *  
+    *  
+    *  OZEL TYPE LAR  (Her ozel type buraya eklenirse designer ve developer arasi koordinasyon daha guzel saglanacaktir.)
+    *  (Sayilarin ne oldugu onemlidir. Buyukluk kucuklugu onemli degildir.)
+    *  0 - Default : single karakterler, aileler, ciftler, calisanlar icin kullanilabilir.
+    *  1 - Patron gibi statu olarak ekibinden ustun olan karakterler icin kullanilacak.
+    *  2 - Kedi 
+    *  3 - Kopek
+    *  4 - 
+    *  5 - 
+    *  6 - 
+    *  7 - 
+    *  8 -
+    *  
+    * 
+
+
+
+    -------------------------------  TEMPLATE NOTLARI   --------------------------------------------------
     => score : Oyuncunun aktif levelde aldigi score , totalScore : Oyuncunun levellerde aldigi skorlarin toplami.
     bu score GameController da tutulurken, totalScore playerprephfs ile tutuluyor. Farkli oyunlarda farkli isler
     icin kullanilabilirler. Ornegin score degil para birikiyorsa para olarak dusunun. Elmas icin farklý degiskenler

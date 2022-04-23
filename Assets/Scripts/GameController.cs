@@ -23,23 +23,23 @@ public class GameController : MonoBehaviour
         StartingEvents();
     }
 
-	private void Update()
+
+
+	public void IncreaseScore()
 	{
-		
-	}
-
-
-	public void SetScore(int eklenecekScore)
-	{
-        if(PlayerController.instance.collectibleVarMi) score += eklenecekScore;
-        // Eðer oyunda collectible yok ise developer kendi score sistemini yazmalý...
-
+		score += 2;
     }
+
+	public void DecreaseScore()
+	{
+		score -= 1;
+	}
 
     public void StartingEvents()
 	{
         masaDolu = false;
         ekipNo = 0;
+		score = 0;
         StartCoroutine(SelectAndPlaceEkip());
 	}
 

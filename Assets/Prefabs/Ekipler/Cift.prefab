@@ -29584,6 +29584,8 @@ MonoBehaviour:
   isim: kari
   happy: {fileID: 8180514428153854937}
   sad: {fileID: 8180514428043555634}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
+  type: 0
 --- !u!1 &8180514428153854937
 GameObject:
   m_ObjectHideFlags: 0
@@ -34681,6 +34683,8 @@ MonoBehaviour:
   isim: koca
   happy: {fileID: 8180514427895298052}
   sad: {fileID: 8180514427875418291}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
+  type: 0
 --- !u!1 &8180514429116560909
 GameObject:
   m_ObjectHideFlags: 0

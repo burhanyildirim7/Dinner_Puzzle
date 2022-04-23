@@ -133,7 +133,7 @@ MonoBehaviour:
   isim: baba
   happy: {fileID: 5426616934498180246}
   sad: {fileID: 5426616935009767017}
-  happyPrefab: {fileID: 0}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
 --- !u!1 &5426616933551763647
 GameObject:
@@ -5232,7 +5232,7 @@ MonoBehaviour:
   isim: anne
   happy: {fileID: 7821138544325701680}
   sad: {fileID: 8230149795678836906}
-  happyPrefab: {fileID: 0}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
 --- !u!1 &5426616933709252217
 GameObject:
@@ -20014,7 +20014,7 @@ MonoBehaviour:
   isim: cocuk
   happy: {fileID: 5426616934588237353}
   sad: {fileID: 5426616933551763647}
-  happyPrefab: {fileID: 0}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
 --- !u!1 &5426616934078307687
 GameObject:
@@ -25027,7 +25027,7 @@ MonoBehaviour:
   isim: cocuk
   happy: {fileID: 5426616933800242926}
   sad: {fileID: 5426616935255886944}
-  happyPrefab: {fileID: 0}
+  happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
 --- !u!1 &5426616934498180246
 GameObject:
@@ -64380,7 +64380,7 @@ Transform:
 --- !u!198 &8230149795660811938
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19887480, guid: 93a7485b7f1564c4aae6a739c3edc50e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8230149795678836906}

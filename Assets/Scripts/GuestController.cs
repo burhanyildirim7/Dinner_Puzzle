@@ -64,30 +64,52 @@ public class GuestController : MonoBehaviour
 		SandalyeController komsularim = transform.parent.GetComponent<SandalyeController>();
 		if (komsularim.komsu1 != null && komsularim.type == type && komsularim.komsu1.transform.childCount > 0)
 		{
-			Debug.Log("buraya girdi SAG");
 			GameController.instance.masaDolu = true;
 			Vector3 ortaNokta = (transform.position + komsularim.komsu1.transform.position) / 2 + new Vector3(0,1,0);
 			ControlKisi(isim,komsularim.komsu1.transform.GetChild(komsularim.komsu1.transform.childCount -1).GetComponent<GuestController>().isim,ortaNokta);
 		}
 		else if (komsularim.komsu2 != null && komsularim.type == type && komsularim.komsu2.transform.childCount > 0)
 		{
-			Debug.Log("buraya girdi SOL");
 			GameController.instance.masaDolu = true;
 			Vector3 ortaNokta = (transform.position + komsularim.komsu1.transform.position) / 2 + new Vector3(0, 1, 0);
 			ControlKisi(isim, komsularim.komsu2.transform.GetChild(komsularim.komsu2.transform.childCount - 1).GetComponent<GuestController>().isim,ortaNokta);
 		}
+		else if(komsularim.type == 2 || komsularim.type ==3)  // kedi kopek kontrolu
+		{
+			if(komsularim.type == type)
+			{
+				happy.SetActive(true);
+				GameController.instance.IncreaseScore();
+			}
+			else
+			{
+				sad.SetActive(true);
+				GameController.instance.DecreaseScore();
+			}
+		}
+		else if(komsularim.type == 1) // bir ekipteki lider konumunda karakter varsa
+		{
+			if(type == 1)
+			{
+				happy.SetActive(true);
+				GameController.instance.IncreaseScore();
+			}
+			else
+			{
+				sad.SetActive(true);
+				GameController.instance.DecreaseScore();
+			}
+		}
 		else
-		{		
+		{	
 			if (!GameController.instance.masaDolu)
 			{
-				Debug.Log("masada kimse yok mu yoksa kontrol yapmalýyýz..");
 				GameController.instance.masaDolu = true;
 				return;
 			}
 			else
 			{
 				sad.SetActive(true);
-				Debug.Log("üzüyorsun beni");
 			}
 		}
 		GameController.instance.ControlEkipBosMu();
@@ -99,80 +121,92 @@ public class GuestController : MonoBehaviour
 		if (isim1 == "anne" && isim2 == "baba")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab,ortaNokta,Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "baba" && isim2 == "anne")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "baba" && isim2 == "cocuk")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "anne" && isim2 == "cocuk")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "cocuk")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "anne")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "cocuk" && isim2 == "baba")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "kari" && isim2 == "koca")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+			HappyActivities(ortaNokta);
 			return;
 		}
 		else if (isim1 == "koca" && isim2 == "kari")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity); return;
+			HappyActivities(ortaNokta);
+			return;
 		}
 		else if (isim1 == "kiz" && isim2 == "oglan")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity); return;
+			HappyActivities(ortaNokta);
+			return;
 		}
 		else if (isim1 == "oglan" && isim2 == "kiz")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity); return;
+			HappyActivities(ortaNokta);
+			return;
 		}
 		else if (isim1 == "isci" && isim2 == "patron")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity); return;
+			HappyActivities(ortaNokta);
+			return;
 		}
-		else if (isim1 == "patron" && isim2 == "isci") // burasda kral koltuðu kontrolü yapýlacak...
+		else if (isim1 == "isci" && isim2 == "isci")
 		{
 			//happy.SetActive(true);
-			Instantiate(happyPrefab, ortaNokta, Quaternion.identity); return;
+			HappyActivities(ortaNokta);
+			return;
 		}
 		else
 		{
 			sad.SetActive(true);
+			GameController.instance.DecreaseScore();
 		}
+	}
+
+	void HappyActivities(Vector3 ortaNokta)
+	{
+		Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
+		GameController.instance.IncreaseScore();
 	}
 
 	
