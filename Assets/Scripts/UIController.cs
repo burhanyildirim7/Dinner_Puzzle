@@ -10,6 +10,8 @@ public class UIController : MonoBehaviour
     public GameObject TapToStartPanel, LoosePanel, GamePanel, WinPanel, winScreenEffectObject, winScreenCoinImage, startScreenCoinImage, scoreEffect;
     public Text gamePlayScoreText, winScreenScoreText, levelNoText, tapToStartScoreText, totalElmasText;
     public Animator ScoreTextAnim;
+    public Slider slider;
+    public Text karakterOraniText;
 
 
 
@@ -50,17 +52,21 @@ public class UIController : MonoBehaviour
         GamePanel.SetActive(true);
         SetLevelText(LevelController.instance.totalLevelNo);
         SetGamePlayScoreText();
+        SetProgressBar();
 
     }
 
     // RESTART TUSUNA BASILDISINDA  --- LOOSE EKRANINDA
     public void RestartButtonClick()
     {
+        Debug.Log("restartbuttonclick");
         GamePanel.SetActive(false);
         LoosePanel.SetActive(false);
         TapToStartPanel.SetActive(true);
         LevelController.instance.RestartLevelEvents();
         SetTapToStartScoreText();
+        SetProgressBar();
+        KarakterOraniText();
     }
 
 
@@ -81,7 +87,7 @@ public class UIController : MonoBehaviour
     /// </summary>
     public void SetGamePlayScoreText()
     {
-        gamePlayScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
+        gamePlayScoreText.text = PlayerPrefs.GetInt("para").ToString();
     }
 
 
@@ -90,7 +96,7 @@ public class UIController : MonoBehaviour
     /// </summary>
     public void SetTapToStartScoreText()
     {
-        tapToStartScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
+        tapToStartScoreText.text = PlayerPrefs.GetInt("para").ToString();
     }
 
     /// <summary>
@@ -98,16 +104,10 @@ public class UIController : MonoBehaviour
     /// </summary>
     public void WinScreenScore()
     {
-        winScreenScoreText.text = GameController.instance.score.ToString();
+        winScreenScoreText.text = GameController.instance.levelPara.ToString();
     }
 
-    /// <summary>
-    /// Bu fonksiyon totalElmas sayilarinin yazildigi textleri gunceller.
-    /// </summary>
-    public void SetTotalElmasText()
-    {
-        totalElmasText.text = PlayerPrefs.GetInt("totalElmas").ToString();
-    }
+
 
     /// <summary>
     /// Bu fonksiyon winscreen ekranini acar.
@@ -123,19 +123,19 @@ public class UIController : MonoBehaviour
         WinPanel.SetActive(true);
         winScreenScoreText.text = "0";
         int sayac = 0;
-        while (sayac < GameController.instance.score)
+        while (sayac < GameController.instance.levelPara)
         {
-            //sayac += PlayerController.instance.collectibleDegeri;
-            //if (sayac % 2 * PlayerController.instance.collectibleDegeri == 0)
-            //{
-            //    GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
-            //    effectObj.transform.localPosition = new Vector3(144, 300, 0);
-            //    effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
-            //    effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
-            //    effectObj.transform.localScale = Vector3.one * .2f;
-            //    StartCoroutine(WinScreenEffect(effectObj));
-            //}
-            winScreenScoreText.text = sayac.ToString();
+			sayac += 1;
+			if (sayac % 2 == 0)
+			{
+				GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
+				effectObj.transform.localPosition = new Vector3(144, 300, 0);
+				effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
+				effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
+				effectObj.transform.localScale = Vector3.one * .2f;
+				StartCoroutine(WinScreenEffect(effectObj));
+			}
+			winScreenScoreText.text = sayac.ToString();
             yield return new WaitForSeconds(.05f);
         }
     }
@@ -212,6 +212,7 @@ public class UIController : MonoBehaviour
         GamePanel.SetActive(true);
         TapToStartPanel.SetActive(false);
         SetGamePlayScoreText();
+        SetProgressBar();
     }
 
     /// <summary>
@@ -223,9 +224,17 @@ public class UIController : MonoBehaviour
         WinPanel.SetActive(false);
         LoosePanel.SetActive(false);
         GamePanel.SetActive(false);
-        tapToStartScoreText.text = PlayerPrefs.GetInt("totalScore").ToString();
+        tapToStartScoreText.text = PlayerPrefs.GetInt("para").ToString();
     }
 
+    public void SetProgressBar()
+	{
+        slider.value = (float)GameController.instance.score / (float)GameController.instance.karakterSayisi;
+	}
 
+    public void KarakterOraniText()
+	{
+        karakterOraniText.text = GameController.instance.oturanKarakterSayisi.ToString() + "/" + GameController.instance.karakterSayisi.ToString();
+	}
 
 }

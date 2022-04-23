@@ -5,10 +5,12 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public static GameController instance; 
-    [HideInInspector]public int score, elmas; 
+    [HideInInspector]public int score, elmas, para, levelPara; 
     [HideInInspector] public bool isContinue,masaDolu, isEkipTime;
     public int ekipNo;
 	LevelAdapter adapter;
+	public Vector3 mevcutEkipPos, siradakiEkipPos;
+	public int karakterSayisi,oturanKarakterSayisi;
 
 
 	private void Awake()
@@ -19,6 +21,7 @@ public class GameController : MonoBehaviour
 
 	void Start()
     {
+		para = PlayerPrefs.GetInt("para");
        isContinue = false;
         StartingEvents();
     }
@@ -29,11 +32,15 @@ public class GameController : MonoBehaviour
 	{
 		score += 2;
 		Debug.Log("score" + score);
+		levelPara += 10;
+		UIController.instance.SetProgressBar();
     }
 
 	public void DecreaseScore()
 	{
 		score -= 1;
+		if (score < 0) score = 0;
+		UIController.instance.SetProgressBar();
 	}
 
     public void StartingEvents()
@@ -41,7 +48,11 @@ public class GameController : MonoBehaviour
         masaDolu = false;
         ekipNo = 0;
 		score = 0;
-        StartCoroutine(SelectAndPlaceEkip());
+		levelPara = 0;
+		oturanKarakterSayisi = 0;
+		StartCoroutine(SelectAndPlaceEkip());
+
+		UIController.instance.SetProgressBar();
 	}
 
     public IEnumerator SelectAndPlaceEkip()
@@ -60,7 +71,8 @@ public class GameController : MonoBehaviour
 		}
 		else
 		{
-			// oyun bitirme olaylarý
+			ControlAndFinishGame();
+			
 		}
 		yield return new WaitForSeconds(.1f);
 		isEkipTime = true;
@@ -75,6 +87,24 @@ public class GameController : MonoBehaviour
 		    StartCoroutine(SelectAndPlaceEkip());
 		}
 		
+	}
+
+	public void ControlAndFinishGame()
+	{
+		if(UIController.instance.slider.value >= .5f)
+		{
+			// baþarýlý..
+			Debug.Log("baþarýlý...");
+			UIController.instance.ActivateWinScreen();
+			para += levelPara;
+			PlayerPrefs.SetInt("para", para);
+		}
+		else
+		{
+			// baþarýsýz..
+			Debug.Log("baþarýsýz...");
+			UIController.instance.ActivateLooseScreen();
+		}
 	}
 
 }

@@ -7,7 +7,7 @@ using DG.Tweening;
 public class GuestController : MonoBehaviour
 {
 	bool oturdu;
-	Vector3 firstPosition;
+	public Vector3 targetPosition;
 	public string isim;
 	public GameObject happy, sad,happyPrefab;
 	public int type;
@@ -15,7 +15,7 @@ public class GuestController : MonoBehaviour
 
 	private void Start()
 	{
-		firstPosition = transform.position;
+
 	}
 
 
@@ -54,13 +54,14 @@ public class GuestController : MonoBehaviour
 			transform.localPosition = new Vector3(0,1.5f,0);
 			transform.parent.GetComponent<SandalyeController>().dolu = true;
 			ControlNeighBours();
-			
+			GameController.instance.oturanKarakterSayisi++;
+			UIController.instance.KarakterOraniText();
 		}	
 		yield return new WaitForSeconds(.1f);
 		if (!oturdu)
 		{
 			transform.parent = null;
-			transform.DOMove(firstPosition,.5f);
+			transform.position = targetPosition;
 		}
 	}
 
@@ -110,6 +111,7 @@ public class GuestController : MonoBehaviour
 			if (!GameController.instance.masaDolu)
 			{
 				GameController.instance.masaDolu = true;
+				GameController.instance.ControlEkipBosMu();
 				return;
 			}
 			else
@@ -118,7 +120,6 @@ public class GuestController : MonoBehaviour
 			}
 		}
 		GameController.instance.ControlEkipBosMu();
-
 	}
 
 	void ControlKisi(string isim1 , string isim2, Vector3 ortaNokta )
@@ -205,6 +206,7 @@ public class GuestController : MonoBehaviour
 		{
 			sad.SetActive(true);
 			GameController.instance.DecreaseScore();
+			GameController.instance.ControlEkipBosMu();
 		}
 	}
 
@@ -212,6 +214,7 @@ public class GuestController : MonoBehaviour
 	{
 		Instantiate(happyPrefab, ortaNokta, Quaternion.identity);
 		GameController.instance.IncreaseScore();
+		GameController.instance.ControlEkipBosMu();
 	}
 
 	
