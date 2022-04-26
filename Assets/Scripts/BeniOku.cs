@@ -48,9 +48,9 @@ public class BeniOku : MonoBehaviour
     *  1 - Patron gibi statu olarak ekibinden ustun olan karakterler icin kullanilacak.
     *  2 - Kedi 
     *  3 - Kopek
-    *  4 - 
-    *  5 - 
-    *  6 - 
+    *  4 - Singlelar   etkisiz
+    *  5 - ebe
+    *  6 - dede
     *  7 - 
     *  8 -
     *  

@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 49f8f81f171c0f84790b9246b18f4450
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: 5549588332550822120
+    second: rig|rig.001|A-pose
+  - first:
+      74: -6294814411722652831
+    second: rig|rig.001|A-pose.001
+  - first:
+      74: -1334680839093086734
+    second: rig|rig.001|A-pose.002
+  - first:
+      74: 6484102847548527062
+    second: rig|rig.001|A-pose.003
+  - first:
+      74: -546264893557741215
+    second: rig|rig.001|A-pose.004
+  - first:
+      74: 4408157906715519066
+    second: rig|rig.001|A-pose.005
+  - first:
+      74: -3478901085302057511
+    second: rig|rig.001|A-pose.006
+  - first:
+      74: -8145812975639894945
+    second: rig|rig.001|A-pose.007
+  - first:
+      74: 7224752867489586926
+    second: rig|rig.001|A-pose.008
+  - first:
+      74: -7238401475043925987
+    second: rig|rig.001|Idle
+  - first:
+      74: 7031952060435696142
+    second: rig|rig.001|Idle.001
+  - first:
+      74: 5917073013916512518
+    second: rig|rig.001|Idle.002
+  - first:
+      74: 7426415786967118304
+    second: rig|rig.001|Idle.003
+  - first:
+      74: 989039386287114717
+    second: rig|rig.001|Idle.004
+  - first:
+      74: -3879880828271196651
+    second: rig|rig.001|Idle.005
+  - first:
+      74: 8607832722435372484
+    second: rig|rig.001|Idle.006
+  - first:
+      74: -4429047312358219286
+    second: rig|rig.001|Idle.007
+  - first:
+      74: -2439952044396054904
+    second: rig|rig.001|Idle.008
+  - first:
+      74: 3208974238998045372
+    second: rig|rig.001|Run
+  - first:
+      74: 6622723016276664634
+    second: rig|rig.001|Run (RM)
+  - first:
+      74: -8813674136000792208
+    second: rig|rig.001|Run (RM).001
+  - first:
+      74: 2338051306045988010
+    second: rig|rig.001|Run (RM).002
+  - first:
+      74: 1047562353469796186
+    second: rig|rig.001|Run (RM).003
+  - first:
+      74: 3480080932503519065
+    second: rig|rig.001|Run (RM).004
+  - first:
+      74: 2363445553083309686
+    second: rig|rig.001|Run (RM).005
+  - first:
+      74: 4315081984249878435
+    second: rig|rig.001|Run (RM).006
+  - first:
+      74: 3389127573331835486
+    second: rig|rig.001|Run (RM).007
+  - first:
+      74: -5127592322459797895
+    second: rig|rig.001|Run (RM).008
+  - first:
+      74: -7159155494022846532
+    second: rig|rig.001|Run.001
+  - first:
+      74: -5770782360712234951
+    second: rig|rig.001|Run.002
+  - first:
+      74: 8071743981911151489
+    second: rig|rig.001|Run.003
+  - first:
+      74: 1336606637046156238
+    second: rig|rig.001|Run.004
+  - first:
+      74: -8137078236806927327
+    second: rig|rig.001|Run.005
+  - first:
+      74: -6465455880453175638
+    second: rig|rig.001|Run.006
+  - first:
+      74: 639437769776053010
+    second: rig|rig.001|Run.007
+  - first:
+      74: 1759007594814824454
+    second: rig|rig.001|Run.008
+  - first:
+      74: -5006697089392169243
+    second: rig|rig.001|Sad
+  - first:
+      74: 4934169831992565930
+    second: rig|rig.001|Sad.001
+  - first:
+      74: 6253879010484002946
+    second: rig|rig.001|Sad.002
+  - first:
+      74: 2290649995374720372
+    second: rig|rig.001|Sad.003
+  - first:
+      74: -4389727218834057995
+    second: rig|rig.001|Sad.004
+  - first:
+      74: -4487422176859648192
+    second: rig|rig.001|Sad.005
+  - first:
+      74: -8288843833835393820
+    second: rig|rig.001|Sad.006
+  - first:
+      74: -3467688165547934924
+    second: rig|rig.001|Sad.007
+  - first:
+      74: -6558579194385868442
+    second: rig|rig.001|Sad.008
+  - first:
+      74: 2506131413021010837
+    second: rig|rig.001|Walk
+  - first:
+      74: 5668253715136225782
+    second: rig|rig.001|Walk (RM)
+  - first:
+      74: 3550153238221400874
+    second: rig|rig.001|Walk (RM).001
+  - first:
+      74: -4440931194085680114
+    second: rig|rig.001|Walk (RM).002
+  - first:
+      74: 8053845115380956412
+    second: rig|rig.001|Walk (RM).003
+  - first:
+      74: -4914684022033538429
+    second: rig|rig.001|Walk (RM).004
+  - first:
+      74: 98933635506733407
+    second: rig|rig.001|Walk (RM).005
+  - first:
+      74: 7018605578119345002
+    second: rig|rig.001|Walk (RM).006
+  - first:
+      74: -1183140795175281767
+    second: rig|rig.001|Walk (RM).007
+  - first:
+      74: -5358057880000599685
+    second: rig|rig.001|Walk (RM).008
+  - first:
+      74: 1774808659409002736
+    second: rig|rig.001|Walk.001
+  - first:
+      74: 4574034518620173380
+    second: rig|rig.001|Walk.002
+  - first:
+      74: 1223541361236133364
+    second: rig|rig.001|Walk.003
+  - first:
+      74: 6755614456187261250
+    second: rig|rig.001|Walk.004
+  - first:
+      74: 7445404435180421482
+    second: rig|rig.001|Walk.005
+  - first:
+      74: 2542063892297897756
+    second: rig|rig.001|Walk.006
+  - first:
+      74: 7085785006925339559
+    second: rig|rig.001|Walk.007
+  - first:
+      74: 8882968930403805241
+    second: rig|rig.001|Walk.008
+  - first:
+      74: 1649137096013654518
+    second: rig|rig.001|Win
+  - first:
+      74: -6510703739604429716
+    second: rig|rig.001|Win.001
+  - first:
+      74: -4645529180747594978
+    second: rig|rig.001|Win.002
+  - first:
+      74: 7680827320833412361
+    second: rig|rig.001|Win.003
+  - first:
+      74: -764190949098386100
+    second: rig|rig.001|Win.004
+  - first:
+      74: -8711116723264505531
+    second: rig|rig.001|Win.005
+  - first:
+      74: -8121914618068376756
+    second: rig|rig.001|Win.006
+  - first:
+      74: -2073223209219481353
+    second: rig|rig.001|Win.007
+  - first:
+      74: 4513573836964451636
+    second: rig|rig.001|Win.008
+  - first:
+      74: 6338891013167870319
+    second: rig|rig|A-pose
+  - first:
+      74: 7007285692857286930
+    second: rig|rig|Idle
+  - first:
+      74: -3311243986111914425
+    second: rig|rig|Run
+  - first:
+      74: -6110778118044804505
+    second: rig|rig|Run (RM)
+  - first:
+      74: -7110316124261577562
+    second: rig|rig|Sad
+  - first:
+      74: -2093756534664325279
+    second: rig|rig|Walk
+  - first:
+      74: -6151758587429939335
+    second: rig|rig|Walk (RM)
+  - first:
+      74: 4741220540020549666
+    second: rig|rig|Win
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

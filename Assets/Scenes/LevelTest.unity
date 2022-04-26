@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.47884, g: 0.8001845, b: 0.90072787, a: 1}
+  m_IndirectSpecularColor: {r: 0.47698158, g: 0.7989754, b: 0.8985044, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15239,6 +15239,8 @@ MonoBehaviour:
   tapToStartScoreText: {fileID: 0}
   totalElmasText: {fileID: 0}
   ScoreTextAnim: {fileID: 0}
+  slider: {fileID: 0}
+  karakterOraniText: {fileID: 0}
 --- !u!4 &955729543
 Transform:
   m_ObjectHideFlags: 0
@@ -15382,10 +15384,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   elmas: 0
+  para: 0
+  levelPara: 0
   isContinue: 0
   masaDolu: 0
   isEkipTime: 0
   ekipNo: 0
+  mevcutEkipPos: {x: 0, y: 0, z: 0}
+  siradakiEkipPos: {x: 0, y: 0, z: 0}
+  karakterSayisi: 0
+  oturanKarakterSayisi: 0
 --- !u!4 &1124119774
 Transform:
   m_ObjectHideFlags: 0
@@ -15531,12 +15539,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf5e84508e814d4489a4dbec2c02493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
   isim: anne
   happy: {fileID: 2865823494012335562}
   sad: {fileID: 4141177486312742224}
   happyPrefab: {fileID: 0}
   type: 0
-  "insanM\xFD": 0
+  insanMi: 0
 --- !u!1 &1417631684
 GameObject:
   m_ObjectHideFlags: 0
@@ -15667,12 +15676,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf5e84508e814d4489a4dbec2c02493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
   isim: baba
   happy: {fileID: 1826019692}
   sad: {fileID: 55872403}
   happyPrefab: {fileID: 0}
   type: 0
-  "insanM\xFD": 0
+  insanMi: 0
 --- !u!1 &1443049507
 GameObject:
   m_ObjectHideFlags: 0
@@ -21143,10 +21153,6 @@ PrefabInstance:
     - target: {fileID: 7530099709413185535, guid: 6677758f864d7ff4ba4532e2da4ebcde, type: 3}
       propertyPath: m_Name
       value: Level1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530099709413185535, guid: 6677758f864d7ff4ba4532e2da4ebcde, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6677758f864d7ff4ba4532e2da4ebcde, type: 3}
