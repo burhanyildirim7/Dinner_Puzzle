@@ -51,8 +51,8 @@ public class BeniOku : MonoBehaviour
     *  4 - Singlelar   etkisiz
     *  5 - ebe
     *  6 - dede
-    *  7 - 
-    *  8 -
+    *  7 - kodcular
+    *  8 - sekreterler
     *  
     * 
 
