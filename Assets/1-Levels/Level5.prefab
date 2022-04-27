@@ -2471,9 +2471,10 @@ GameObject:
   - component: {fileID: 1965335403801452380}
   - component: {fileID: 1965335403801452383}
   - component: {fileID: 1965335403801452382}
+  - component: {fileID: 8996272970814393315}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: sandalye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2551,11 +2552,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965335403801452376}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Size: {x: 1.0000001, y: 16.258305, z: 1.0000002}
+  m_Center: {x: 0.00000007196625, y: 7.129151, z: -0.00000007196625}
+--- !u!114 &8996272970814393315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965335403801452376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7692a27542c0add4aac748922f3ef614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komsu1: {fileID: 0}
+  komsu2: {fileID: 0}
+  dolu: 0
+  type: 0
+  oturmaPos: {fileID: 0}
+  bakmaRot: {fileID: 0}
 --- !u!1 &1965335404114142306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,9 +2847,10 @@ GameObject:
   - component: {fileID: 1965335404142949453}
   - component: {fileID: 1965335404142949452}
   - component: {fileID: 1965335404142949455}
+  - component: {fileID: 4277958021059694090}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: sandalye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2908,11 +2928,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965335404142949449}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Size: {x: 1.0000001, y: 16.020979, z: 1.0000002}
+  m_Center: {x: 0.00000007196625, y: 7.010491, z: -0.00000007196625}
+--- !u!114 &4277958021059694090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965335404142949449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7692a27542c0add4aac748922f3ef614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komsu1: {fileID: 0}
+  komsu2: {fileID: 0}
+  dolu: 0
+  type: 0
+  oturmaPos: {fileID: 0}
+  bakmaRot: {fileID: 0}
 --- !u!1 &1965335404143382077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,9 +3176,10 @@ GameObject:
   - component: {fileID: 1965335404221207640}
   - component: {fileID: 1965335404221207643}
   - component: {fileID: 1965335404221207642}
+  - component: {fileID: 1691290239151124632}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: sandalye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3218,11 +3257,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965335404221207636}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Size: {x: 1.0000001, y: 17.459642, z: 1.0000002}
+  m_Center: {x: 0.00000007196625, y: 7.729821, z: -0.00000007196625}
+--- !u!114 &1691290239151124632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965335404221207636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7692a27542c0add4aac748922f3ef614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komsu1: {fileID: 0}
+  komsu2: {fileID: 0}
+  dolu: 0
+  type: 0
+  oturmaPos: {fileID: 0}
+  bakmaRot: {fileID: 0}
 --- !u!1 &1965335404238460132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,9 +3708,10 @@ GameObject:
   - component: {fileID: 1965335404476235191}
   - component: {fileID: 1965335404476235190}
   - component: {fileID: 1965335404476235185}
+  - component: {fileID: 6732886414914458843}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: sandalye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3731,11 +3789,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965335404476235187}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Size: {x: 1.0000001, y: 15.862634, z: 1.0000002}
+  m_Center: {x: 0.00000007196625, y: 6.9313154, z: -0.00000007196625}
+--- !u!114 &6732886414914458843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965335404476235187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7692a27542c0add4aac748922f3ef614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komsu1: {fileID: 0}
+  komsu2: {fileID: 0}
+  dolu: 0
+  type: 0
+  oturmaPos: {fileID: 0}
+  bakmaRot: {fileID: 0}
 --- !u!1 &1965335404526363464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4151,9 +4227,10 @@ GameObject:
   - component: {fileID: 1965335404997958584}
   - component: {fileID: 1965335404997958587}
   - component: {fileID: 1965335404997958586}
+  - component: {fileID: 1558698609059846908}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: sandalye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4231,11 +4308,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965335404997958580}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Size: {x: 1.0000001, y: 20.568779, z: 1.0000002}
+  m_Center: {x: 0.00000007196625, y: 9.28439, z: -0.00000007196625}
+--- !u!114 &1558698609059846908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965335404997958580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7692a27542c0add4aac748922f3ef614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komsu1: {fileID: 0}
+  komsu2: {fileID: 0}
+  dolu: 0
+  type: 0
+  oturmaPos: {fileID: 0}
+  bakmaRot: {fileID: 0}
 --- !u!1 &1965335405034680643
 GameObject:
   m_ObjectHideFlags: 0

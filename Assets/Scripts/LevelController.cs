@@ -60,7 +60,8 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         GameController.instance.mevcutEkipPos = currentLevelObj.GetComponent<LevelAdapter>().mevcutEkipPos.transform.position;
         GameController.instance.siradakiEkipPos = currentLevelObj.GetComponent<LevelAdapter>().siradakiEkipPos.transform.position;
-        GameController.instance.karakterSayisi = currentLevelObj.GetComponent<LevelAdapter>().karakterSayisi;
+        GameController.instance.toplamPuzzle = currentLevelObj.GetComponent<LevelAdapter>().puzzleSayisi;
+        GameController.instance.toplamKisiSayisi = currentLevelObj.GetComponent<LevelAdapter>().toplamKisiSayisi;
         currentLevelObj.GetComponent<LevelAdapter>().ekipler[0].transform.position = GameController.instance.mevcutEkipPos;
         UIController.instance.KarakterOraniText();
         GameController.instance.StartingEvents();

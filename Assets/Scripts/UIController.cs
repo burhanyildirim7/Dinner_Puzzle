@@ -229,12 +229,12 @@ public class UIController : MonoBehaviour
 
     public void SetProgressBar()
 	{
-        slider.value = (float)GameController.instance.score / (float)GameController.instance.karakterSayisi;
+        slider.value = (float)GameController.instance.cozulenPuzzle / (float)GameController.instance.toplamPuzzle;
 	}
 
     public void KarakterOraniText()
 	{
-        karakterOraniText.text = GameController.instance.oturanKarakterSayisi.ToString() + "/" + GameController.instance.karakterSayisi.ToString();
+        karakterOraniText.text = GameController.instance.oturanKisiSayisi.ToString() + "/" + GameController.instance.toplamKisiSayisi.ToString();
 	}
 
 }

@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public int ekipNo;
 	LevelAdapter adapter;
 	public Vector3 mevcutEkipPos, siradakiEkipPos;
-	public int karakterSayisi,oturanKarakterSayisi;
+	public int cozulenPuzzle,toplamPuzzle,toplamKisiSayisi,oturanKisiSayisi;
 
 
 	private void Awake()
@@ -49,9 +49,10 @@ public class GameController : MonoBehaviour
         ekipNo = 0;
 		score = 0;
 		levelPara = 0;
-		oturanKarakterSayisi = 0;
+		cozulenPuzzle = 0;
+		oturanKisiSayisi = 0;
 		StartCoroutine(SelectAndPlaceEkip());
-
+		UIController.instance.KarakterOraniText();
 		UIController.instance.SetProgressBar();
 	}
 
@@ -67,7 +68,7 @@ public class GameController : MonoBehaviour
 		}
 		if (ekipNo < adapter.ekipler.Count)
 		{
-			adapter.ekipler[ekipNo].transform.position = new Vector3(mevcutEkipPos.x,0,mevcutEkipPos.z) ;
+			adapter.ekipler[ekipNo].transform.position = new Vector3(mevcutEkipPos.x,mevcutEkipPos.y,mevcutEkipPos.z) ;
 			adapter.ekipler[ekipNo].transform.LookAt(Camera.main.transform.forward,Vector3.up);
 		}
 		else
@@ -84,7 +85,8 @@ public class GameController : MonoBehaviour
 		if (adapter.ekipler[ekipNo].transform.childCount == 0)
 		{
 			isEkipTime = false;
-			ekipNo++;
+			if (ekipNo < adapter.ekipler.Count - 1) ekipNo++;
+			else ControlAndFinishGame();
 		    StartCoroutine(SelectAndPlaceEkip());
 		}
 		

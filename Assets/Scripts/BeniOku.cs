@@ -53,6 +53,7 @@ public class BeniOku : MonoBehaviour
     *  6 - dede
     *  7 - kodcular
     *  8 - sekreterler
+    *  9 - sanatcilar
     *  
     * 
 
