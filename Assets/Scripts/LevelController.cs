@@ -13,7 +13,7 @@ public class LevelController : MonoBehaviour
     private void Awake()
     {
         if (instance == null) instance = this;
-        //else Destroy(this);
+        else Destroy(this);
     }
 
     private void Start()
@@ -30,9 +30,6 @@ public class LevelController : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Bu fonksiyon level nuarasini bir artirir.
-    /// </summary>
     public void IncreaseLevelNo()
     {
         tempLevelNo = levelNo;
@@ -41,9 +38,6 @@ public class LevelController : MonoBehaviour
         UIController.instance.SetLevelText(totalLevelNo);
     }
 
-    /// <summary>
-    /// Bu fonksiyon oyun ilk acildiginda veya nextlevelde tetiklenir.
-    /// </summary>
     public void LevelStartingEvents()
     {
         if (totalLevelNo > levels.Count)
@@ -59,7 +53,6 @@ public class LevelController : MonoBehaviour
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
         Elephant.LevelStarted(totalLevelNo);
         StartCoroutine(StartingEvents());
-        Debug.Log("levelstarting");
     }
 
     IEnumerator StartingEvents()
@@ -72,13 +65,9 @@ public class LevelController : MonoBehaviour
         UIController.instance.KarakterOraniText();
         GameController.instance.StartingEvents();
         UIController.instance.SetProgressBar();
-        Debug.Log("startingevent");
 
     }
 
-    /// <summary>
-    /// Bu fonksiyon nextlevel butonuna basildiginda tetiklenir. UIControlden tetikleniyor.
-    /// </summary>
     public void NextLevelEvents()
     {
         Elephant.LevelCompleted(totalLevelNo);
@@ -96,12 +85,9 @@ public class LevelController : MonoBehaviour
         
     }
 
-    /// <summary>
-    /// Bu fonksiyon RestartLevel butonuna basildiginda tetiklenir. UIControlden tetikleniyor.
-    /// </summary>
+
     public void RestartLevelEvents()
     {
-        Debug.Log("restartlevelevent");
         Elephant.LevelFailed(totalLevelNo);
         Destroy(currentLevelObj);
         LevelRestartEvents();

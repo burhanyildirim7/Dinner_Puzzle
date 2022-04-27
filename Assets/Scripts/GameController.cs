@@ -67,7 +67,8 @@ public class GameController : MonoBehaviour
 		}
 		if (ekipNo < adapter.ekipler.Count)
 		{
-            adapter.ekipler[ekipNo].transform.position = Vector3.zero;
+			adapter.ekipler[ekipNo].transform.position = new Vector3(mevcutEkipPos.x,0,mevcutEkipPos.z) ;
+			adapter.ekipler[ekipNo].transform.LookAt(Camera.main.transform.forward,Vector3.up);
 		}
 		else
 		{

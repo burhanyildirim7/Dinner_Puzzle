@@ -18,13 +18,19 @@ public class GuestController : MonoBehaviour
 
     }
 
+	private void Update()
+	{
+        Debug.Log(oturdu);
+	}
 
-    private void OnTriggerEnter(Collider other)
+
+	private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("sandalye") && !other.GetComponent<SandalyeController>().dolu)
         {
             oturdu = true;
             transform.parent = other.transform;
+            Debug.Log("sandalye");
         }
     }
 
@@ -45,14 +51,17 @@ public class GuestController : MonoBehaviour
         yield return new WaitForSeconds(.05f);
         if (oturdu)
         {
+            GetComponent<Collider>().enabled = false;
+            Debug.Log("burada oturdu");
             if (insanMi)
             {
                 GetComponentInChildren<Animator>().SetTrigger("sit");
-                transform.LookAt(transform.parent.transform.parent.transform.position, Vector3.up);
+              
             }
-
-            transform.localPosition = new Vector3(0, 1.5f, 0);
-            transform.parent.GetComponent<SandalyeController>().dolu = true;
+            SandalyeController sandalyem = transform.parent.GetComponent<SandalyeController>();
+            transform.position = sandalyem.oturmaPos.position;
+            transform.LookAt(sandalyem.bakmaRot.position,Vector3.up);
+            sandalyem.dolu = true;
             ControlNeighBours();
             GameController.instance.oturanKarakterSayisi++;
             UIController.instance.KarakterOraniText();

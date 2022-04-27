@@ -54,7 +54,7 @@ public class DragController : MonoBehaviour
 		{
 			Vector3 position = new Vector3(Input.mousePosition.x,Input.mousePosition.y,Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
 			Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-			selectedObject.transform.position = new Vector3(worldPosition.x, 2, worldPosition.z);
+			selectedObject.transform.position = new Vector3(worldPosition.x, 4, worldPosition.z);
 		}
     }
 
