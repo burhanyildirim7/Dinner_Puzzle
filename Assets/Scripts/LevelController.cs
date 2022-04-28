@@ -18,12 +18,13 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+       // PlayerPrefs.DeleteAll();
         totalLevelNo = PlayerPrefs.GetInt("level");
         if (totalLevelNo == 0)
         {
             totalLevelNo = 1;
             levelNo = 1;
+            
         }
         UIController.instance.SetLevelText(totalLevelNo);
         LevelStartingEvents();
@@ -42,7 +43,7 @@ public class LevelController : MonoBehaviour
     {
         if (totalLevelNo > levels.Count)
         {
-            levelNo = Random.Range(1, levels.Count + 1);
+            levelNo = Random.Range(2, levels.Count + 1);
             if (levelNo == tempLevelNo) levelNo = Random.Range(1, levels.Count + 1);
         }
         else
@@ -67,6 +68,13 @@ public class LevelController : MonoBehaviour
         UIController.instance.KarakterOraniText();
         GameController.instance.StartingEvents();
         UIController.instance.SetProgressBar();
+        GameObject[] zones = GameObject.FindGameObjectsWithTag("zone");
+        GameController.instance.zone.Clear();
+		for (int i = 0; i < zones.Length; i++)
+		{
+            GameController.instance.zone.Add(zones[i]);
+            GameController.instance.zone[i].SetActive(false);
+		}
 
     }
 

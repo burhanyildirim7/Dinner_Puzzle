@@ -23,7 +23,11 @@ public class DragController : MonoBehaviour
 						{
 							return;
 						}
-
+						if(LevelController.instance.totalLevelNo == 1)
+						{
+							UIController.instance.onBoarding.SetActive(false);
+						}
+						GameController.instance.ActivateZones();
 						selectedObject = hit.collider.gameObject;
 						selectedObject.GetComponent<GuestController>().targetPosition = selectedObject.transform.position;
 						selectedObject.GetComponent<GuestController>().tempY = selectedObject.transform.position.y;
@@ -43,12 +47,33 @@ public class DragController : MonoBehaviour
 			{
 				if (selectedObject != null)
 				{
+					if (LevelController.instance.totalLevelNo == 1)
+					{
+						UIController.instance.onBoarding.SetActive(true);
+						if(GameController.instance.onboardingSirasi == 0)
+						{
+							UIController.instance.onBoardingAnim.SetTrigger("iki");
+						}
+						else if (GameController.instance.onboardingSirasi == 1)
+						{
+							UIController.instance.onBoardingAnim.SetTrigger("uc");
+						}
+						else if (GameController.instance.onboardingSirasi == 2)
+						{
+							UIController.instance.onBoardingAnim.SetTrigger("dort");
+						}
+						else
+						{
+							UIController.instance.onBoarding.SetActive(false);
+						}
+					}
 					Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
 					Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
 					selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY, worldPosition.z);
 					selectedObject.GetComponent<Collider>().enabled = false;
 					StartCoroutine(selectedObject.GetComponent<GuestController>().ControlSandalye());
 					selectedObject = null;
+					GameController.instance.DeactivateZones();
 				}
 
 			}

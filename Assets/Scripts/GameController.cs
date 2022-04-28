@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
 	LevelAdapter adapter;
 	public Vector3 mevcutEkipPos, siradakiEkipPos, ekipLookAtPos;
 	public int cozulenPuzzle,toplamPuzzle,toplamKisiSayisi,oturanKisiSayisi;
+	public int onboardingSirasi = 1;
+	public List<GameObject> zone = new();
 
 
 	private void Awake()
@@ -31,7 +33,6 @@ public class GameController : MonoBehaviour
 	public void IncreaseScore()
 	{
 		score += 2;
-		Debug.Log("score" + score);
 		levelPara += 10;
 		UIController.instance.SetProgressBar();
     }
@@ -97,7 +98,6 @@ public class GameController : MonoBehaviour
 		if(UIController.instance.slider.value >= .5f)
 		{
 			// baþarýlý..
-			Debug.Log("baþarýlý...");
 			UIController.instance.ActivateWinScreen();
 			para += levelPara;
 			PlayerPrefs.SetInt("para", para);
@@ -106,9 +106,25 @@ public class GameController : MonoBehaviour
 		else
 		{
 			// baþarýsýz..
-			Debug.Log("baþarýsýz...");
 			UIController.instance.ActivateLooseScreen();
 			isContinue = false;
+		}
+	}
+
+	public void ActivateZones()
+	{
+		foreach (GameObject obj in zone)
+		{
+			if (!obj.transform.parent.GetComponent<SandalyeController>().dolu) obj.SetActive(true);
+			else obj.SetActive(false);
+		}
+	}
+
+	public void DeactivateZones()
+	{
+		foreach (GameObject obj in zone)
+		{
+			obj.SetActive(false);
 		}
 	}
 

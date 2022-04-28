@@ -54,7 +54,10 @@ public class BeniOku : MonoBehaviour
     *  7 - kodcular
     *  8 - sekreterler
     *  9 - sanatcilar
-    *  
+    *  21 - 21 , 22 ,23, 24  typlarý ilk levelda onboarding için olusturulmustur. Kullaniciyi onboardinge zorlamak icin yapilmistir.
+    *  22 - 
+    *  23 - 
+    *  24 -
     *  
     * 
 

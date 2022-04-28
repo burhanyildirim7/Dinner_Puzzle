@@ -12,6 +12,8 @@ public class UIController : MonoBehaviour
     public Animator ScoreTextAnim;
     public Slider slider;
     public Text karakterOraniText;
+    public GameObject onBoarding;
+    public Animator onBoardingAnim;
 
 
 
@@ -53,6 +55,11 @@ public class UIController : MonoBehaviour
         SetLevelText(LevelController.instance.totalLevelNo);
         SetGamePlayScoreText();
         SetProgressBar();
+        if(LevelController.instance.totalLevelNo == 1)
+		{
+            onBoarding.SetActive(true);
+            onBoardingAnim.SetTrigger("bir");
+		}
 
     }
 
@@ -207,7 +214,7 @@ public class UIController : MonoBehaviour
 	{
         yield return new WaitForSeconds(1f);
         GamePanel.SetActive(false);
-        LoosePanel.SetActive(false);
+        LoosePanel.SetActive(true);
 	}
 
 

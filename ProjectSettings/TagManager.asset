@@ -21,6 +21,7 @@ TagManager:
   - drag
   - sandalye
   - levelMain
+  - zone
   layers:
   - Default
   - TransparentFX

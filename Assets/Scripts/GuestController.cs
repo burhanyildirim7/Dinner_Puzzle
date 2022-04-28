@@ -28,7 +28,6 @@ public class GuestController : MonoBehaviour
         {
             oturdu = true;
             transform.parent = other.transform;
-            Debug.Log("sandalye");
         }
     }
 
@@ -50,7 +49,6 @@ public class GuestController : MonoBehaviour
         if (oturdu)
         {
             GetComponent<Collider>().enabled = false;
-            Debug.Log("burada oturdu");
            
             SandalyeController sandalyem = transform.parent.GetComponent<SandalyeController>();
             transform.position = sandalyem.oturmaPos.position;
@@ -130,6 +128,18 @@ public class GuestController : MonoBehaviour
             }
             else if(type == 1 || type == 7 || type == 8 ||type == 9 )  // patron kodcu sanatcý v.s. zaten direk kendi koltuðundadýr mutlu olur...
 			{
+                GameController.instance.cozulenPuzzle++;
+                GameController.instance.masaDolu = true;
+                happy.SetActive(true);
+                GameController.instance.IncreaseScore();
+                GameController.instance.ControlEkipBosMu();
+                return;
+            }
+            else if(type == 21 || type == 22 || type == 23 ||type == 24)
+			{
+                // onboarding islemleri...
+                GameController.instance.onboardingSirasi++;
+                Debug.Log(GameController.instance.onboardingSirasi);
                 GameController.instance.cozulenPuzzle++;
                 GameController.instance.masaDolu = true;
                 happy.SetActive(true);
