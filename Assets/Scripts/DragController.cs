@@ -24,6 +24,7 @@ public class DragController : MonoBehaviour
 					
 					selectedObject = hit.collider.gameObject;
 					selectedObject.GetComponent<GuestController>().targetPosition = selectedObject.transform.position;
+					selectedObject.GetComponent<GuestController>().tempY = selectedObject.transform.position.y;
 
 				}
 			}
@@ -42,7 +43,7 @@ public class DragController : MonoBehaviour
 			{
 				Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
 				Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-				selectedObject.transform.position = new Vector3(worldPosition.x, 1.5f, worldPosition.z);
+				selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY, worldPosition.z);
 				selectedObject.GetComponent<Collider>().enabled = false;
 				StartCoroutine(selectedObject.GetComponent<GuestController>().ControlSandalye());
 				selectedObject = null;
@@ -54,7 +55,7 @@ public class DragController : MonoBehaviour
 		{
 			Vector3 position = new Vector3(Input.mousePosition.x,Input.mousePosition.y,Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
 			Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-			selectedObject.transform.position = new Vector3(worldPosition.x, 4, worldPosition.z);
+			selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY + 1.5f, worldPosition.z);
 		}
     }
 

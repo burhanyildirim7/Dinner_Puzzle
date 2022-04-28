@@ -55,6 +55,7 @@ public class BeniOku : MonoBehaviour
     *  8 - sekreterler
     *  9 - sanatcilar
     *  
+    *  
     * 
 
 

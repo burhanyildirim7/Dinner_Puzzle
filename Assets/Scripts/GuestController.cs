@@ -12,10 +12,11 @@ public class GuestController : MonoBehaviour
     public GameObject happy, sad, happyPrefab;
     public int type;
     public bool insanMi;
+    [HideInInspector]public float tempY;
 
     private void Start()
     {
-
+        tempY = transform.position.y;
     }
 
 
@@ -48,11 +49,7 @@ public class GuestController : MonoBehaviour
         {
             GetComponent<Collider>().enabled = false;
             Debug.Log("burada oturdu");
-            if (insanMi)
-            {
-                GetComponentInChildren<Animator>().SetTrigger("sit");
-              
-            }
+           
             SandalyeController sandalyem = transform.parent.GetComponent<SandalyeController>();
             transform.position = sandalyem.oturmaPos.position;
             transform.LookAt(sandalyem.bakmaRot.position,Vector3.up);
@@ -60,7 +57,26 @@ public class GuestController : MonoBehaviour
             ControlNeighBours();
             GameController.instance.oturanKisiSayisi++;
             UIController.instance.KarakterOraniText();
-            
+            if (insanMi && sandalyem.oturulabilirMi)
+            {
+                GetComponentInChildren<Animator>().SetTrigger("sit");
+            }
+            else if (insanMi && sandalyem.type == 2)
+			{
+                GetComponentInChildren<Animator>().SetTrigger("bagdas");
+            }
+            else if(insanMi && sandalyem.type == 3)
+			{
+                GetComponentInChildren<Animator>().SetTrigger("bagdas");
+            }
+            else if(insanMi && sandalyem.sezlongMu)
+			{
+                GetComponentInChildren<Animator>().SetTrigger("yat");
+            }
+            else if (!insanMi && type == 2)
+            {
+                GetComponentInChildren<Animator>().SetTrigger("otur");
+            }
         }
         yield return new WaitForSeconds(.1f);
         if (!oturdu)
@@ -86,13 +102,13 @@ public class GuestController : MonoBehaviour
             if (sandalyem.komsu1 != null && sandalyem.komsu1.GetComponent<SandalyeController>().dolu)
 			{
                 GameController.instance.masaDolu = true;
-                Vector3 ortaNokta = (transform.position + sandalyem.komsu1.transform.position) / 2 + new Vector3(0, 1, 0);
+                Vector3 ortaNokta = (transform.position + sandalyem.komsu1.transform.position) / 2 + new Vector3(0, 3, 0);
                 ControlKisi(isim, sandalyem.komsu1.transform.GetChild(sandalyem.komsu1.transform.childCount - 1).GetComponent<GuestController>().isim, ortaNokta);
             }
             else if(sandalyem.komsu2 != null && sandalyem.komsu2.GetComponent<SandalyeController>().dolu)
 			{
                 GameController.instance.masaDolu = true;
-                Vector3 ortaNokta = (transform.position + sandalyem.komsu2.transform.position) / 2 + new Vector3(0, 1, 0);
+                Vector3 ortaNokta = (transform.position + sandalyem.komsu2.transform.position) / 2 + new Vector3(0, 3, 0);
                 ControlKisi(isim, sandalyem.komsu2.transform.GetChild(sandalyem.komsu2.transform.childCount - 1).GetComponent<GuestController>().isim, ortaNokta);
             }
             else if (type == 2 || type == 3) // kedi köpeði direk kontrol ediyorum...
@@ -110,7 +126,7 @@ public class GuestController : MonoBehaviour
                     sad.SetActive(true);
                 }
             }
-            else if(type == 1 || type == 7 || type == 8 ||type == 9)  // patron kodcu sanatcý v.s. zaten direk kendi koltuðundadýr mutlu olur...
+            else if(type == 1 || type == 7 || type == 8 ||type == 9 )  // patron kodcu sanatcý v.s. zaten direk kendi koltuðundadýr mutlu olur...
 			{
                 GameController.instance.cozulenPuzzle++;
                 GameController.instance.masaDolu = true;
@@ -246,6 +262,7 @@ public class GuestController : MonoBehaviour
         }
         else if (isim1 == "isci" && isim2 == "isci")
         {
+
             HappyActivities(ortaNokta);
             return;
         }
@@ -259,6 +276,7 @@ public class GuestController : MonoBehaviour
 
     void HappyActivities(Vector3 ortaNokta)
     {
+        happy.SetActive(true);
         Instantiate(happyPrefab, ortaNokta+ new Vector3(0,3,0), Quaternion.identity);
         GameController.instance.IncreaseScore();
         GameController.instance.cozulenPuzzle++;

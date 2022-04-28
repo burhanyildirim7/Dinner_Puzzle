@@ -44224,6 +44224,7 @@ MonoBehaviour:
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 2
   insanMi: 0
+  tempY: 0
 --- !u!1 &4281028176587979303
 GameObject:
   m_ObjectHideFlags: 0
@@ -54238,6 +54239,7 @@ MonoBehaviour:
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 4
   insanMi: 0
+  tempY: 0
 --- !u!1 &4281028176753085617
 GameObject:
   m_ObjectHideFlags: 0
@@ -59288,6 +59290,7 @@ MonoBehaviour:
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 6
   insanMi: 0
+  tempY: 0
 --- !u!1 &4281028176873706208
 GameObject:
   m_ObjectHideFlags: 0
@@ -78899,6 +78902,7 @@ MonoBehaviour:
   happyPrefab: {fileID: 2151335118446119835, guid: 11f7acb8c1fe93d488e31305b0c952c1, type: 3}
   type: 0
   insanMi: 0
+  tempY: 0
 --- !u!1001 &8132288107989687634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78975,14 +78979,20 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8942698756253868035}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 7340eb8aba631aa4b9a4026dd17e9863, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 60f9b174d621aa94fb12742653ba0bcc, type: 3}
   m_Controller: {fileID: 9100000, guid: b63111447df15de42917f378616c9ae1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'DEF-spine'\n\tTransform 'DEF-upper_arm.L'\n\tTransform
+    'DEF-thigh.L'\n\tTransform 'DEF-thigh.R'\n\tTransform 'DEF-shin.L'\n\tTransform
+    'DEF-spine'\n\tTransform 'DEF-f_ring.01.R'\n\tTransform 'DEF-spine.002'\n\tTransform
+    'DEF-f_middle.01.R'\n\tTransform 'DEF-f_pinky.01.R'\n\tand more ...\n\tFrom animation
+    clip 'yatma'\n\tFrom animation clip 'bagdas'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -79078,14 +79088,20 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8942698756332538157}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 7340eb8aba631aa4b9a4026dd17e9863, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 60bef206c738207488441a9e4a84c189, type: 3}
   m_Controller: {fileID: 9100000, guid: b63111447df15de42917f378616c9ae1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'DEF-spine'\n\tTransform 'DEF-upper_arm.L'\n\tTransform
+    'DEF-thigh.L'\n\tTransform 'DEF-thigh.R'\n\tTransform 'DEF-shin.L'\n\tTransform
+    'DEF-spine'\n\tTransform 'DEF-f_ring.01.R'\n\tTransform 'DEF-spine.002'\n\tTransform
+    'DEF-f_middle.01.R'\n\tTransform 'DEF-f_pinky.01.R'\n\tand more ...\n\tFrom animation
+    clip 'yatma'\n\tFrom animation clip 'bagdas'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -79172,7 +79188,13 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'DEF-spine'\n\tTransform 'DEF-upper_arm.L'\n\tTransform
+    'DEF-thigh.L'\n\tTransform 'DEF-thigh.R'\n\tTransform 'DEF-shin.L'\n\tTransform
+    'DEF-spine'\n\tTransform 'DEF-f_ring.01.R'\n\tTransform 'DEF-spine.002'\n\tTransform
+    'DEF-f_middle.01.R'\n\tTransform 'DEF-f_pinky.01.R'\n\tand more ...\n\tFrom animation
+    clip 'yatma'\n\tFrom animation clip 'bagdas'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0

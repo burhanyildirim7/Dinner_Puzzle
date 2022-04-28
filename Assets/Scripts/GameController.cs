@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public bool isContinue,masaDolu, isEkipTime;
     public int ekipNo;
 	LevelAdapter adapter;
-	public Vector3 mevcutEkipPos, siradakiEkipPos;
+	public Vector3 mevcutEkipPos, siradakiEkipPos, ekipLookAtPos;
 	public int cozulenPuzzle,toplamPuzzle,toplamKisiSayisi,oturanKisiSayisi;
 
 
@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
 	void Start()
     {
 		para = PlayerPrefs.GetInt("para");
-       isContinue = false;
+        isContinue = false;
         StartingEvents();
     }
 
@@ -64,12 +64,12 @@ public class GameController : MonoBehaviour
 
 		for (int i = 0; i < adapter.ekipler.Count; i++)
 		{
-            adapter.ekipler[i].transform.position = new Vector3(0,0,-30);
+            adapter.ekipler[i].transform.position = new Vector3(100,100,100);
 		}
 		if (ekipNo < adapter.ekipler.Count)
 		{
 			adapter.ekipler[ekipNo].transform.position = new Vector3(mevcutEkipPos.x,mevcutEkipPos.y,mevcutEkipPos.z) ;
-			adapter.ekipler[ekipNo].transform.LookAt(Camera.main.transform.forward,Vector3.up);
+			adapter.ekipler[ekipNo].transform.LookAt(ekipLookAtPos,Vector3.up);
 		}
 		else
 		{
