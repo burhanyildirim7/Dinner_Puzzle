@@ -9,54 +9,58 @@ public class DragController : MonoBehaviour
    
     void Update()
     {
-		if (Input.GetMouseButtonDown(0))
+		if (GameController.instance.isContinue)
 		{
-			if(selectedObject == null)
+			if (Input.GetMouseButtonDown(0))
 			{
-				RaycastHit hit = CastRay();
-
-				if(hit.collider != null)
+				if (selectedObject == null)
 				{
-					if (!hit.collider.CompareTag("drag"))
+					RaycastHit hit = CastRay();
+
+					if (hit.collider != null)
 					{
-						return;
+						if (!hit.collider.CompareTag("drag"))
+						{
+							return;
+						}
+
+						selectedObject = hit.collider.gameObject;
+						selectedObject.GetComponent<GuestController>().targetPosition = selectedObject.transform.position;
+						selectedObject.GetComponent<GuestController>().tempY = selectedObject.transform.position.y;
+
 					}
-					
-					selectedObject = hit.collider.gameObject;
-					selectedObject.GetComponent<GuestController>().targetPosition = selectedObject.transform.position;
-					selectedObject.GetComponent<GuestController>().tempY = selectedObject.transform.position.y;
-
 				}
+				//else
+				//{
+				//	Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
+				//	Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
+				//	selectedObject.transform.position = new Vector3(worldPosition.x, 1, worldPosition.z);
+				//	selectedObject = null;
+				//}
 			}
-			//else
-			//{
-			//	Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
-			//	Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-			//	selectedObject.transform.position = new Vector3(worldPosition.x, 1, worldPosition.z);
-			//	selectedObject = null;
-			//}
-		}
 
-		if (Input.GetMouseButtonUp(0))
-		{
+			if (Input.GetMouseButtonUp(0))
+			{
+				if (selectedObject != null)
+				{
+					Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
+					Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
+					selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY, worldPosition.z);
+					selectedObject.GetComponent<Collider>().enabled = false;
+					StartCoroutine(selectedObject.GetComponent<GuestController>().ControlSandalye());
+					selectedObject = null;
+				}
+
+			}
+
 			if (selectedObject != null)
 			{
 				Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
 				Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-				selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY, worldPosition.z);
-				selectedObject.GetComponent<Collider>().enabled = false;
-				StartCoroutine(selectedObject.GetComponent<GuestController>().ControlSandalye());
-				selectedObject = null;
+				selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY + 1.5f, worldPosition.z);
 			}
-			
 		}
-
-        if(selectedObject != null)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x,Input.mousePosition.y,Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
-			Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-			selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.GetComponent<GuestController>().tempY + 1.5f, worldPosition.z);
-		}
+		
     }
 
 

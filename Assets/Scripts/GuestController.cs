@@ -13,10 +13,12 @@ public class GuestController : MonoBehaviour
     public int type;
     public bool insanMi;
     [HideInInspector]public float tempY;
+    [HideInInspector] public GameObject tempParent;
 
     private void Start()
     {
         tempY = transform.position.y;
+        tempParent = transform.parent.gameObject;
     }
 
 
@@ -81,7 +83,7 @@ public class GuestController : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         if (!oturdu)
         {
-            transform.parent = null;
+            transform.parent = tempParent.transform;
             transform.position = targetPosition;
         }
     }

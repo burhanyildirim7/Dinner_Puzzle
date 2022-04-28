@@ -101,12 +101,14 @@ public class GameController : MonoBehaviour
 			UIController.instance.ActivateWinScreen();
 			para += levelPara;
 			PlayerPrefs.SetInt("para", para);
+			isContinue = false;
 		}
 		else
 		{
 			// baþarýsýz..
 			Debug.Log("baþarýsýz...");
 			UIController.instance.ActivateLooseScreen();
+			isContinue = false;
 		}
 	}
 

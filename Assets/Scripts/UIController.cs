@@ -120,6 +120,7 @@ public class UIController : MonoBehaviour
 
     IEnumerator WinScreenDelay()
     {
+        yield return new WaitForSeconds(1f);
         WinPanel.SetActive(true);
         winScreenScoreText.text = "0";
         int sayac = 0;
@@ -199,9 +200,15 @@ public class UIController : MonoBehaviour
     /// </summary>
     public void ActivateLooseScreen()
     {
-        GamePanel.SetActive(false);
-        LoosePanel.SetActive(true);
+        StartCoroutine(LoseScreenDelay());
     }
+
+    IEnumerator LoseScreenDelay()
+	{
+        yield return new WaitForSeconds(1f);
+        GamePanel.SetActive(false);
+        LoosePanel.SetActive(false);
+	}
 
 
     /// <summary>
