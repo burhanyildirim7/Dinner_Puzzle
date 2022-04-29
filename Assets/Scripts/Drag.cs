@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-	private Vector3 mOffset;
-	private float mzCoord;
-	private void OnMouseDown()
-	{
-		mzCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-		mOffset = gameObject.transform.position - GetMouseWorldPos();
-	}
+    private Vector3 mOffset;
+    private float mzCoord;
+    private void OnMouseDown()
+    {
+        mzCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        mOffset = gameObject.transform.position - GetMouseWorldPos();
+        Debug.Log("Karakteri bıraktı");
+    }
 
-	private void OnMouseDrag()
-	{
-		Debug.Log(GetMouseWorldPos());
-		transform.position = new Vector3(GetMouseWorldPos().x,2,GetMouseWorldPos().z);
-	}
+    private void OnMouseDrag()
+    {
+        Debug.Log(GetMouseWorldPos());
+        transform.position = new Vector3(GetMouseWorldPos().x, 2, GetMouseWorldPos().z);
+        Debug.Log("Karakteri tuttu");
+    }
 
-	private Vector3 GetMouseWorldPos()
-	{
-		Vector3 mousePoint = Input.mousePosition;
+    private Vector3 GetMouseWorldPos()
+    {
+        Vector3 mousePoint = Input.mousePosition;
 
-		mousePoint.z = mzCoord;
+        mousePoint.z = mzCoord;
 
-		return Camera.main.ScreenToWorldPoint(mousePoint);
-	}
+        return Camera.main.ScreenToWorldPoint(mousePoint);
+    }
 }

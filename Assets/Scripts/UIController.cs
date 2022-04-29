@@ -55,11 +55,11 @@ public class UIController : MonoBehaviour
         SetLevelText(LevelController.instance.totalLevelNo);
         SetGamePlayScoreText();
         SetProgressBar();
-        if(LevelController.instance.totalLevelNo == 1)
-		{
+        if (LevelController.instance.totalLevelNo == 1)
+        {
             onBoarding.SetActive(true);
             onBoardingAnim.SetTrigger("bir");
-		}
+        }
 
     }
 
@@ -133,17 +133,17 @@ public class UIController : MonoBehaviour
         int sayac = 0;
         while (sayac < GameController.instance.levelPara)
         {
-			sayac += 1;
-			if (sayac % 2 == 0)
-			{
-				GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
-				effectObj.transform.localPosition = new Vector3(144, 300, 0);
-				effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
-				effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
-				effectObj.transform.localScale = Vector3.one * .2f;
-				StartCoroutine(WinScreenEffect(effectObj));
-			}
-			winScreenScoreText.text = sayac.ToString();
+            sayac += 1;
+            if (sayac % 2 == 0)
+            {
+                GameObject effectObj = Instantiate(winScreenEffectObject, new Vector3(144, 400, 0), Quaternion.identity, winScreenCoinImage.transform);
+                effectObj.transform.localPosition = new Vector3(144, 300, 0);
+                effectObj.transform.localRotation = Quaternion.Euler(0, 0, winScreenCoinImage.transform.localRotation.z);
+                effectObj.GetComponent<Image>().sprite = winScreenCoinImage.GetComponent<Image>().sprite;
+                effectObj.transform.localScale = Vector3.one * .2f;
+                StartCoroutine(WinScreenEffect(effectObj));
+            }
+            winScreenScoreText.text = sayac.ToString();
             yield return new WaitForSeconds(.05f);
         }
     }
@@ -211,11 +211,11 @@ public class UIController : MonoBehaviour
     }
 
     IEnumerator LoseScreenDelay()
-	{
+    {
         yield return new WaitForSeconds(1f);
         GamePanel.SetActive(false);
         LoosePanel.SetActive(true);
-	}
+    }
 
 
     /// <summary>
@@ -242,13 +242,13 @@ public class UIController : MonoBehaviour
     }
 
     public void SetProgressBar()
-	{
+    {
         slider.value = (float)GameController.instance.cozulenPuzzle / (float)GameController.instance.toplamPuzzle;
-	}
+    }
 
     public void KarakterOraniText()
-	{
-        karakterOraniText.text = GameController.instance.oturanKisiSayisi.ToString() + "/" + GameController.instance.toplamKisiSayisi.ToString();
-	}
+    {
+        //karakterOraniText.text = GameController.instance.oturanKisiSayisi.ToString() + "/" + GameController.instance.toplamKisiSayisi.ToString();
+    }
 
 }
