@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ElephantSDK;
+//using ElephantSDK;
 
 public class LevelController : MonoBehaviour
 {
@@ -18,13 +18,13 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-       // PlayerPrefs.DeleteAll();
+        // PlayerPrefs.DeleteAll();
         totalLevelNo = PlayerPrefs.GetInt("level");
         if (totalLevelNo == 0)
         {
             totalLevelNo = 1;
             levelNo = 1;
-            
+
         }
         UIController.instance.SetLevelText(totalLevelNo);
         LevelStartingEvents();
@@ -52,12 +52,12 @@ public class LevelController : MonoBehaviour
         }
         UIController.instance.SetLevelText(totalLevelNo);
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
-        Elephant.LevelStarted(totalLevelNo);
+        //Elephant.LevelStarted(totalLevelNo);
         StartCoroutine(StartingEvents());
     }
 
     IEnumerator StartingEvents()
-	{
+    {
         yield return new WaitForSeconds(.1f);
         GameController.instance.mevcutEkipPos = currentLevelObj.GetComponent<LevelAdapter>().mevcutEkipPos.transform.position;
         GameController.instance.siradakiEkipPos = currentLevelObj.GetComponent<LevelAdapter>().siradakiEkipPos.transform.position;
@@ -70,17 +70,17 @@ public class LevelController : MonoBehaviour
         UIController.instance.SetProgressBar();
         GameObject[] zones = GameObject.FindGameObjectsWithTag("zone");
         GameController.instance.zone.Clear();
-		for (int i = 0; i < zones.Length; i++)
-		{
+        for (int i = 0; i < zones.Length; i++)
+        {
             GameController.instance.zone.Add(zones[i]);
             GameController.instance.zone[i].SetActive(false);
-		}
+        }
 
     }
 
     public void NextLevelEvents()
     {
-        Elephant.LevelCompleted(totalLevelNo);
+        //Elephant.LevelCompleted(totalLevelNo);
         Destroy(currentLevelObj);
         IncreaseLevelNo();
         LevelStartingEvents();
@@ -90,15 +90,15 @@ public class LevelController : MonoBehaviour
     {
         UIController.instance.SetLevelText(totalLevelNo);
         currentLevelObj = Instantiate(levels[levelNo - 1], Vector3.zero, Quaternion.identity);
-        Elephant.LevelStarted(totalLevelNo);
+        //Elephant.LevelStarted(totalLevelNo);
         StartCoroutine(StartingEvents());
-        
+
     }
 
 
     public void RestartLevelEvents()
     {
-        Elephant.LevelFailed(totalLevelNo);
+        //Elephant.LevelFailed(totalLevelNo);
         Destroy(currentLevelObj);
         LevelRestartEvents();
     }
